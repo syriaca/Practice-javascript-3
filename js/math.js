@@ -18,6 +18,11 @@ if(num2 == 0) {
     document.location.reload(true);
 }
 
+if(isNaN(num1) || isNaN(num2)) {
+    alert("At least one of the values you typed is not a number. Reload and try again.");
+    document.location.reload(true);
+}
+
 // build an HTML message
 message = "<h1>Math with the numbers " + num1 + " and " + num2 + "</h1>";
 message += num1 + " + " + num2 + " = " + (num1 + num2);
